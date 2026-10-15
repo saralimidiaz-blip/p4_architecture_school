@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plano_hall_planta -3</title>
+    <style>
+        
+        :root {
+            --hall-color: #38b449;      
+            --pasillo-color: #ffff00;   
+            --border-color: #000000;    
+            --border-width: 14px;       
+            --font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+        }
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        
+        .map-container {
+            position: relative;
+            width: 1100px;
+            height: 620px;
+            background-color: #ffffff;
+        }
+
+        
+        .title {
+            position: absolute;
+            top: -50px;
+            left: 0px;
+            font-size: 26px;
+            font-weight: bold;
+            line-height: 1.25;
+            color: #000000;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        
+        .pasillo-1 {
+            position: absolute;
+            top: -90px;
+            left: 450px;
+            width: 140px;
+            height: 170px;
+            background-color: var(--pasillo-color);
+            border: var(--border-width) solid var(--border-color);
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        
+        .pasillo-2 {
+            position: absolute;
+            top: 156px;
+            left: 0px;
+            width: 320px;
+            height: 135px;
+            background-color: var(--pasillo-color);
+            border: var(--border-width) solid var(--border-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        
+        .hall-container {
+            position: absolute;
+            top: 75px;
+            left: 310px;
+            width: 770px;
+            height: 385px;
+            z-index: 1;
+        }
+
+        
+        .hall-shape {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--hall-color);
+            border: var(--border-width) solid var(--border-color);
+        }
+
+        
+        .hall-border-fix {
+            position: absolute;
+            top: 82px;
+            left: 0px;
+            width: 86px;
+            height: 134px;
+            border-top: var(--border-width) solid var(--border-color);
+            border-left: var(--border-width) solid var(--border-color);
+            border-bottom: var(--border-width) solid var(--border-color);
+            background-color: var(--hall-color);
+        }
+
+        .hall-top-border {
+            position: absolute;
+            top: 82px;
+            left: 85px;
+            width: 150px;
+            height: var(--border-width);
+            background-color: var(--border-color);
+        }
+
+        
+        .hall-text {
+            position: absolute;
+            top: 200px;
+            left: 400px;
+            transform: translate(-50%, -50%);
+            font-size: 64px;
+            font-weight: 900;
+            color: #000000;
+            letter-spacing: 1px;
+            z-index: 3;
+        }
+
+        
+        .escaleras {
+            position: absolute;
+            top: 480px;
+            left: 310px;
+            width: 435px;
+            height: 135px;
+            background-color: var(--pasillo-color);
+            border: var(--border-width) solid var(--border-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="map-container">
+        
+        <div class="title">
+            PLANO HALL PLANTA -3<br>
+            EASD ALCOI
+        </div>
+
+        
+        <div class="pasillo-1">
+            PASILLO 1
+        </div>
+
+        
+        <div class="pasillo-2">
+            PASILLO 2
+        </div>
+
+        
+        <div class="hall-container">
+            <div class="hall-border-fix"></div>
+            <div class="hall-top-border"></div>
+            <div class="hall-shape"></div>
+            <div class="hall-text">HALL</div>
+        </div>
+
+
+        <div class="escaleras">
+            ESCALERAS
+        </div>
+    </div>
+
+</body>
+</html>
